@@ -1,0 +1,24 @@
+<tr>
+  <td>
+    <h4><%= category.name %></h4>
+  </td>
+  <td>
+    <%= Product.order(id: :desc).all.select { |n| n.category_id == category.id }.length %>
+  </td>
+  <td>
+    <% temp = Product.order(id: :asc).all.select { |n| n.category_id == category.id } %>
+    <% category_prices = [] %>
+    <% puts category_prices.sum(0.00) %>
+    <% puts "YEAHYEAH" %>
+    <% puts category.id %>
+    <% puts temp.length %>
+
+    <% puts category.methods %>
+    <% if temp.length != 0 %>
+    <% temp.each { |n| category_prices << n.price } %>
+    <%= humanized_money_with_symbol category_prices.sum(0.00)/category_prices.size %>
+    <% else %>
+    <%= humanized_money_with_symbol 0.00 %>
+    <% end %>
+  </td>
+</tr>
