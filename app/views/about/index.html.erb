@@ -1,16 +1,10 @@
 <h1>About Us!</h1>
 <br>
 <h2 class="p-3 mb-2 bg-info text-dark">We are an Ecom Company, much like Amazon. Matter of fact, we idealize Amazon to the point where our entire goal is to be like them! Are we copying? No... <%= @products_length %></h2>
+
+<h2 class="p-3 mb-2 bg-info text-dark">You might like this product: </h2>
+
 <ul>
-  <li><%= link_to 'Products',  [:admin, :products] %></li>
+  <li><%= link_to @random_product.name,  @random_product %></li>
 </ul>
 
-<h2 class="p-3 mb-2 bg-info text-dark">Unique categories in your database: <%= @categories_length %></h2>
-
-<% start = 0 %>
-<%# <% while start < @categories_length%>
-<ul>
-  <% @categories.each do |category| %>
-  <li><%= link_to category.name, category %></li>
-  <% end %>
-</ul>
