@@ -1,2 +1,16 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<h1>Welcome to the Admin Dashboard!</h1>
+<br>
+<h2 class="p-3 mb-2 bg-info text-dark">Unique products remaining in your database: <%= @products_length %></h2>
+<ul>
+  <li><%= link_to 'Products',  [:admin, :products] %></li>
+</ul>
+
+<h2 class="p-3 mb-2 bg-info text-dark">Unique categories in your database: <%= @categories_length %></h2>
+
+<% start = 0 %>
+<%# <% while start < @categories_length%>
+<ul>
+  <% @categories.each do |category| %>
+  <li><%= link_to category.name, category %></li>
+  <% end %>
+</ul>
