@@ -2,6 +2,9 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    puts "GOAT"
+    puts ENV["AUTHPASS"]
+    puts ENV["AUTHUSER"]
   end
 
   def create
