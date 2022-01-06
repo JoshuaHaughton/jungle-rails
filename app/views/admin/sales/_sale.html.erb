@@ -10,11 +10,18 @@
   </td>
   <td>
     <h4>STATUS</h4>
+    <% if sale.finished? %>
+      <span class="label label-danger">Finished</span>
+    <% elsif sale.upcoming? %>
+      <span class="label label-warning">Upcoming</span>
+    <% else %>
+      <span class="label label-success">Active</span>
+    <% end %>
   </td>
   <td>
     <h4><%= sale.percent_off %></h4>
   </td>
   <td>
-  
+
   </td>
 </tr>
