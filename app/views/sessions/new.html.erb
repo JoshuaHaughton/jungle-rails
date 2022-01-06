@@ -1,0 +1,32 @@
+<section class="users-login">
+
+  <header class="page-header">
+    <h1>User Login</h1>
+  </header>
+
+  <div class="well">
+    <h3>Please fill in your information to Log In to your account</h3>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-1">
+      <%= form_tag '/login' do |form| %>
+
+        <div class="form-group">
+          <span>Email: </span>
+          <%= text_field_tag :email %>
+        </div>
+
+        <div class="form-group">
+          <span>Password: </span>
+          <%= password_field_tag :password %>
+        </div> 
+
+        <br>
+
+        <%= submit_tag 'Login', class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+
+</section>
