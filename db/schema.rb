@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20220106222845) do
+ActiveRecord::Schema.define(version: 20220110123702) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -93,6 +93,11 @@ ActiveRecord::Schema.define(version: 20220106222845) do
     t.string "username",        limit: 255, null: false
     t.string "email",           limit: 255, null: false
     t.string "password_digest", limit: 255, null: false
+  end
+
+  create_table "widgets", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "answers", "questions", name: "answers_question_id_fkey", on_delete: :cascade
