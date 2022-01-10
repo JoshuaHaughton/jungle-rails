@@ -40,12 +40,12 @@ gem 'faker'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'quiet_assets'
-  gem 'nokogiri', '1.6.7.2'
+  # gem 'nokogiri', '1.6.7.2'
   gem 'dotenv-rails'
-  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do
