@@ -86,7 +86,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.0.0)
     minitest (5.9.0)
     monetize (1.1.0)
       money (~> 6.5.0)
@@ -100,11 +100,9 @@ GEM
     multi_json (1.12.1)
     netrc (0.11.0)
     newrelic_rpm (3.16.0.318)
-    nokogiri (1.6.8)
-      mini_portile2 (~> 2.1.0)
-      pkg-config (~> 1.1.7)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
     pg (0.18.4)
-    pkg-config (1.1.7)
     puma (3.5.2)
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
@@ -140,7 +138,7 @@ GEM
       activesupport (= 4.2.6)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (11.2.2)
+    rake (13.0.6)
     rdoc (4.2.2)
       json (~> 1.4)
     rest-client (2.0.0)
@@ -219,6 +217,7 @@ DEPENDENCIES
   jquery-rails
   money-rails
   newrelic_rpm
+  nokogiri (= 1.6.7.2)
   pg
   puma
   quiet_assets
@@ -238,4 +237,4 @@ RUBY VERSION
    ruby 2.3.5p376
 
 BUNDLED WITH
-   1.16.1
+   1.17.3
