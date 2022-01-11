@@ -39,12 +39,14 @@ gem 'faker'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'phantomjs', :require => 'phantomjs/poltergeist' 
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'quiet_assets'
-  # gem 'nokogiri', '1.6.7.2'
+  # gem 'nokogiri', '1.10.10'
   gem 'dotenv-rails'
 end
 
