@@ -26,8 +26,6 @@ scenario "They see all products" do
 
   expect(page).to have_content('My Cart (1)')
 
-  save_screenshot('cart.png')
-
 end
 
 end
