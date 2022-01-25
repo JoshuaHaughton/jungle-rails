@@ -1,6 +1,30 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2 for purposes of learning Rails through developing a project. Users can browse the store for items, see cart totals, and even enter payment information to checkout via stripe integration.
+
+
+### Images
+
+
+## Home Page
+ !['Display Project Home Page'](https://github.com/JoshuaHaughton/jungle-rails/blob/master/docs/Home_page.png?raw=true)
+
+
+
+ ## Order Confirmation Page
+ !['Users are brought to this page after confirming their order'](https://github.com/JoshuaHaughton/jungle-rails/blob/master/docs/Order_Confirmation.png?raw=true)
+
+
+
+ ## User Cart Page
+ !['User is shown a list of all products they added to their cart'](https://github.com/JoshuaHaughton/jungle-rails/blob/master/docs/My_Cart.png?raw=true)
+
+
+
+ ## User Payment
+ !['User is brought to a page to pay with card info upon checkout'](https://github.com/JoshuaHaughton/jungle-rails/blob/master/docs/User_Payment.png?raw=true)
+
+
 
 ## Additional Steps for Apple M1 Machines
 
@@ -31,23 +55,3 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
-
-
-## Home Page
- !['Display Project Home Page'](https://github.com/JoshuaHaughton/jungle-rails/blob/master/docs/Home_page.png?raw=true)
-
-
-
- ## Order Confirmation Page
- !['Users are brought to this page after confirming their order'](https://github.com/JoshuaHaughton/jungle-rails/blob/master/docs/Order_Confirmation.png?raw=true)
-
-
-
- ## User Cart Page
- !['User is shown a list of all products they added to their cart'](https://github.com/JoshuaHaughton/jungle-rails/blob/master/docs/My_Cart.png?raw=true)
-
-
-
- ## User Payment
- !['User is brought to a page to pay with card info upon checkout'](https://github.com/JoshuaHaughton/jungle-rails/blob/master/docs/User_Payment.png?raw=true)
-
